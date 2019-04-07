@@ -2,6 +2,7 @@
 
 Migrate from function prototype fn.property(args) into Ember.computed(args, fn).
 
+Convert computed properties into Ember.computed() to not use prototype anymore. This plugin can be used along with Webpack and other babel plugins just to test in dev server. If you want to overwrite existing files, you can execute this plugin in Node env as well.
 
 ## Example
 
@@ -9,16 +10,16 @@ Migrate from function prototype fn.property(args) into Ember.computed(args, fn).
 
 ```js
 fullname: function () {
-        return `${this.firstName} ${this.lastName}`;
-    }.property("firstName", "lastName")
+  return `${this.firstName} ${this.lastName}`;
+}.property("firstName", "lastName")
 ```
 
 **Out**
 
 ```js
- fullname: Ember.computed("firstName", "lastName", function () {
-        return `${this.firstName} ${this.lastName}`;
-  })
+fullname: Ember.computed("firstName", "lastName", function () {
+  return `${this.firstName} ${this.lastName}`;
+})
 ```
 
 ## Installation
