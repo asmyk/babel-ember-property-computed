@@ -1,8 +1,8 @@
 {
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Migrate from function prototype fn.property(args) into Ember.computed(args, fn)",
   "repository": "asmyk/babel-plugin-ember-property-computed",
-  "name":"babel-plugin-ember-property-computed",
+  "name": "babel-plugin-ember-property-computed",
   "author": "Arek Smyk <hello@areksmyk.com>",
   "main": "lib/index.js",
   "devDependencies": {
