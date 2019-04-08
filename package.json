@@ -1,5 +1,5 @@
 {
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Migrate from function prototype fn.property(args) into Ember.computed(args, fn)",
   "repository": "asmyk/babel-ember-property-computed",
   "name": "babel-plugin-ember-property-computed",
@@ -10,7 +10,7 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
     "mkdirp": "^0.5.1",
-    "mocha": "^2.2.5",
+    "mocha": "^6.1.1",
     "rimraf": "^2.6.3"
   },
   "scripts": {
